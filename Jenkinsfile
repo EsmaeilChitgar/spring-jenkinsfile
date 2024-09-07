@@ -16,7 +16,7 @@ pipeline {
             stage('Checkout') {
                 steps {
                     // Clone the Git repository
-                    git 'https://github.com/EsmaeilChitgar/spring-cucumber-test.git'
+                    git 'https://github.com/EsmaeilChitgar/spring-jenkinsfile.git'
                 }
             }
             
