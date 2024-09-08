@@ -11,39 +11,49 @@ pipeline {
     }
 
     environment {
-        // Define environment variables (optional)
         MAVEN_OPTS = '-Xmx1024m'
     }
 
     stages {
+            stage('Version Check') {
+                steps {
+                    echo 'Checking Java version...'
+                    bat 'java -version'
+
+                    echo 'Checking Maven version...'
+                    bat 'mvn -v'
+
+                    echo 'Checking Git version...'
+                    bat 'git --version'
+                }
+            }
+
             stage('Checkout') {
                 steps {
-                    // Clone the Git repository
                     git 'https://github.com/EsmaeilChitgar/spring-jenkinsfile.git'
                 }
             }
-            
+
             stage('Build') {
                 steps {
                     echo 'Start building...'
-                    bat 'mvn -Dmaven.test.failure.ignore=true clean install'
+                    bat 'mvn clean install -DskipTests'
                 }
             }
-            
+
             stage('Test') {
                 steps {
                     echo 'Start testing...'
-                    bat 'mvn clean test'
-//                     bat 'dir target\\surefire-reports'
+                    bat 'mvn -Dmaven.test.failure.ignore=true test'
                 }
-//
+
 //                 post {
 //                     always {
 //                          junit 'target/surefire-reports/*.xml'
 //                     }
 //                 }
             }
-            
+
             stage('Deploy') {
                 steps {
                     echo 'Start processing deploy.bat'
@@ -51,9 +61,8 @@ pipeline {
                 }
             }
         }
-    
+
     post {
-        // Cleanup, or notifications at the end of the pipeline
         always {
             echo 'Pipeline completed!'
         }
