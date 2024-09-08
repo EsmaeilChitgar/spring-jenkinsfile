@@ -6,7 +6,6 @@ pipeline {
     }
 
     tools {
-        // Install the Maven version configured as "Maven 3.9.8" and add it to the path.
         maven "Maven 3.9.8"
         jdk 'JDK 17'
     }
@@ -34,14 +33,15 @@ pipeline {
             stage('Test') {
                 steps {
                     echo 'Start testing...'
-                    bat 'mvn test'
+                    bat 'mvn clean test'
+//                     bat 'dir target\\surefire-reports'
                 }
-
-                post {
-                    always {
-                         junit 'target/surefire-reports/*.xml'
-                    }
-                }
+//
+//                 post {
+//                     always {
+//                          junit 'target/surefire-reports/*.xml'
+//                     }
+//                 }
             }
             
             stage('Deploy') {
@@ -61,8 +61,7 @@ pipeline {
             echo 'Pipeline succeeded!'
         }
         failure {
-            echo 'Pipeline failed!; So cleaning project...'
-            bat 'mvn clean'
+            echo 'Pipeline failed!'
         }
     }
 }
