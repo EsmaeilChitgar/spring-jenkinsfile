@@ -1,0 +1,3 @@
+@echo off
+echo Starting delivery process...
+echo Delivery process complete!

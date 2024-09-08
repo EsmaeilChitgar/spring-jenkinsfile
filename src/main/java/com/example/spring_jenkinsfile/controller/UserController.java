@@ -1,7 +1,7 @@
-package com.example.spring_cucumber.controller;
+package com.example.spring_jenkinsfile.controller;
 
-import com.example.spring_cucumber.model.User;
-import com.example.spring_cucumber.repository.UserRepository;
+import com.example.spring_jenkinsfile.model.User;
+import com.example.spring_jenkinsfile.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

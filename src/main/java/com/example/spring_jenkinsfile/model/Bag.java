@@ -1,4 +1,4 @@
-package com.example.spring_cucumber.model;
+package com.example.spring_jenkinsfile.model;
 
 import java.util.ArrayList;
 

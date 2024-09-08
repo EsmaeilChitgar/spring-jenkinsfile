@@ -1,4 +1,4 @@
-package com.example.spring_cucumber.version;
+package com.example.spring_jenkinsfile.version;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

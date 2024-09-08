@@ -8,7 +8,7 @@ Then got to localhost:8080 after setup plugins and login, Click on 'New Item'-> 
 
 Then click your pipeline name and select 'Configure' and in the Pipeline->Definition section, Select 'Git' in 'SCM' combobox and then in the 'Repository URL' section, paste the address of this git URL
 
-https://github.com/EsmaeilChitgar/spring-cucumber-test.git
+https://github.com/EsmaeilChitgar/spring-jenkinsfile.git
 
 In the 'Branch Specifier (blank for 'any')', select the desired branch (here 'master') and then click on 'Save'.
 

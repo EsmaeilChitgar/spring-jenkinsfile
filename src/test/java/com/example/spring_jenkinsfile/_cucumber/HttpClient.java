@@ -1,4 +1,4 @@
-package com.example.spring_cucumber._cucumber;
+package com.example.spring_jenkinsfile._cucumber;
 
 import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.http.HttpEntity;

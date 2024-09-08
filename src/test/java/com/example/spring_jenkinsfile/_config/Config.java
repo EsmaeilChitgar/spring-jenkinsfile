@@ -1,4 +1,4 @@
-package com.example.spring_cucumber._config;
+package com.example.spring_jenkinsfile._config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

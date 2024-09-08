@@ -1,7 +1,7 @@
-package com.example.spring_cucumber.user;
+package com.example.spring_jenkinsfile.user;
 
-import com.example.spring_cucumber.model.User;
-import com.example.spring_cucumber.repository.UserRepository;
+import com.example.spring_jenkinsfile.model.User;
+import com.example.spring_jenkinsfile.repository.UserRepository;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;

@@ -1,6 +1,6 @@
-package com.example.spring_cucumber.controller;
+package com.example.spring_jenkinsfile.controller;
 
-import com.example.spring_cucumber.model.Bag;
+import com.example.spring_jenkinsfile.model.Bag;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 

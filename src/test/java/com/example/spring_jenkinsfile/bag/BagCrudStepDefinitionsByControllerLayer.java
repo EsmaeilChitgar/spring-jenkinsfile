@@ -1,4 +1,4 @@
-package com.example.spring_cucumber.bag;
+package com.example.spring_jenkinsfile.bag;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

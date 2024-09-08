@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    options {
+        skipStagesAfterUnstable()
+    }
+
     tools {
         // Install the Maven version configured as "Maven 3.9.8" and add it to the path.
         maven "Maven 3.9.8"
@@ -32,11 +36,18 @@ pipeline {
                     echo 'Start testing...'
                     bat 'mvn test'
                 }
+
+                post {
+                    always {
+                         junit 'target/surefire-reports/*.xml'
+                    }
+                }
             }
             
             stage('Deploy') {
                 steps {
-                    echo 'Start deploying...'
+                    echo 'Start processing deploy.bat'
+                    bat './jenkins/scripts/deploy.bat'
                 }
             }
         }

@@ -1,4 +1,4 @@
-package com.example.spring_cucumber._cucumber;
+package com.example.spring_jenkinsfile._cucumber;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;

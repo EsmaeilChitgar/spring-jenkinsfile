@@ -1,7 +1,7 @@
-package com.example.spring_cucumber.bag;
+package com.example.spring_jenkinsfile.bag;
 
-import com.example.spring_cucumber._cucumber.HttpClient;
-import com.example.spring_cucumber.model.Bag;
+import com.example.spring_jenkinsfile._cucumber.HttpClient;
+import com.example.spring_jenkinsfile.model.Bag;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 

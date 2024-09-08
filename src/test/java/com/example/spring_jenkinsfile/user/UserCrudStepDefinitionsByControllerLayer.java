@@ -1,6 +1,6 @@
-package com.example.spring_cucumber.user;
+package com.example.spring_jenkinsfile.user;
 
-import com.example.spring_cucumber.model.User;
+import com.example.spring_jenkinsfile.model.User;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

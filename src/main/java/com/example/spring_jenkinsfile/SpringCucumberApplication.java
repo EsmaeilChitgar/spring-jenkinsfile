@@ -1,4 +1,4 @@
-package com.example.spring_cucumber;
+package com.example.spring_jenkinsfile;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

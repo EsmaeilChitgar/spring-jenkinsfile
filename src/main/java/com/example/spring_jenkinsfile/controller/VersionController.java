@@ -1,4 +1,4 @@
-package com.example.spring_cucumber.controller;
+package com.example.spring_jenkinsfile.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

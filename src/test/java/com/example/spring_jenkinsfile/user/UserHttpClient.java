@@ -1,7 +1,7 @@
-package com.example.spring_cucumber.user;
+package com.example.spring_jenkinsfile.user;
 
-import com.example.spring_cucumber.model.User;
-import com.example.spring_cucumber._cucumber.HttpClient;
+import com.example.spring_jenkinsfile.model.User;
+import com.example.spring_jenkinsfile._cucumber.HttpClient;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
